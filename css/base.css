@@ -1,23 +1,23 @@
-/*reset css  é‡ç½®é»˜è®¤çš„ä¸€äº›æ ·å¼  æµè§ˆå™¨å­è‡ªå¸¦çš„  ç›®çš„æ˜¯ä¿æŒå„ç§ç»ˆç«¯æ˜¾ç¤ºä¸€è‡´*/
-/*æ‰€æœ‰çš„æ ‡ç­¾å’Œä¼ªç±»  before after*/
+/*reset css  ÖØÖÃÄ¬ÈÏµÄÒ»Ğ©ÑùÊ½  ä¯ÀÀÆ÷×Ó×Ô´øµÄ  Ä¿µÄÊÇ±£³Ö¸÷ÖÖÖÕ¶ËÏÔÊ¾Ò»ÖÂ*/
+/*ËùÓĞµÄ±êÇ©ºÍÎ±Àà  before after*/
 *,
 ::before,
 ::after{
     padding: 0;
     margin: 0;
 
-    /*åœ¨ç§»åŠ¨ç«¯ç‰¹æ®Šçš„è®¾ç½®*/
-    /*æ¸…é™¤ç‚¹å‡»é«˜äº®æ•ˆæœ*/
+    /*ÔÚÒÆ¶¯¶ËÌØÊâµÄÉèÖÃ*/
+    /*Çå³ıµã»÷¸ßÁÁĞ§¹û*/
     -webkit-tap-highlight-color: transparent;
-    /*è®¾ç½®æ‰€æœ‰çš„ç›’å­çš„å®½åº¦ä»¥è¾¹æ¡†å¼€å§‹è®¡ç®—*/
+    /*ÉèÖÃËùÓĞµÄºĞ×ÓµÄ¿í¶ÈÒÔ±ß¿ò¿ªÊ¼¼ÆËã*/
     -webkit-box-sizing: border-box;
-    /*è¦å…¼å®¹ webkit æµè§ˆå™¨å†…æ ¸å‚å•† è¿™ç§æƒ…å†µä¸€èˆ¬æ˜¯è€çš„ç§»åŠ¨ç«¯æµè§ˆå™¨*/
+    /*Òª¼æÈİ webkit ä¯ÀÀÆ÷ÄÚºË³§ÉÌ ÕâÖÖÇé¿öÒ»°ãÊÇÀÏµÄÒÆ¶¯¶Ëä¯ÀÀÆ÷*/
     box-sizing: border-box;
 }
 body{
     font-size: 14px;
     color: #333;
-    font-family: "MicroSoft YaHei","sans-serif";/*æ˜¯è®¾å¤‡é»˜è®¤çš„å­—ä½“*/
+    font-family: "MicroSoft YaHei","sans-serif";/*ÊÇÉè±¸Ä¬ÈÏµÄ×ÖÌå*/
 }
 ul,ol{
     list-style: none;
@@ -33,10 +33,10 @@ input,textarea{
     border: none;
     outline: none;
     resize: none;
-    /*ç‰¹æ®Šçš„å±æ€§å®šä¹‰  æ¸…é™¤æµè§ˆå™¨ç»™inputè‡ªå¸¦çš„æ ·å¼*/
-    -webkit-appearance: none;/*ç»„ä»¶é»˜è®¤çš„æ ·å¼ç©º*/
+    /*ÌØÊâµÄÊôĞÔ¶¨Òå  Çå³ıä¯ÀÀÆ÷¸øinput×Ô´øµÄÑùÊ½*/
+    -webkit-appearance: none;/*×é¼şÄ¬ÈÏµÄÑùÊ½¿Õ*/
 }
-/*common css  ä¹Ÿå°±æ˜¯æˆ‘ä»¬å…¬ç”¨çš„css*/
+/*common css  Ò²¾ÍÊÇÎÒÃÇ¹«ÓÃµÄcss*/
 .f_left{
     float: left;
 }
@@ -67,13 +67,13 @@ input,textarea{
 .mianColor{
     color: #d8505c;
 }
-/*æ‰€æœ‰ä½¿ç”¨ç²¾çµå›¾çš„ class  ä»¥icon_å¼€å§‹çš„æ‰€æœ‰classéƒ½æœ‰è¿™äº›å±æ€§*/
+/*ËùÓĞÊ¹ÓÃ¾«ÁéÍ¼µÄ class  ÒÔicon_¿ªÊ¼µÄËùÓĞclass¶¼ÓĞÕâĞ©ÊôĞÔ*/
 [class^="icon_"]{
     background: url("../images/sprites.png") no-repeat;
-    /*å‹ç¼©èƒŒæ™¯å›¾*/
+    /*Ñ¹Ëõ±³¾°Í¼*/
     background-size: 200px 200px;
 }
-/*é¡¶éƒ¨é€šæ */
+/*¶¥²¿Í¨À¸*/
 .jd_topBar{
     height: 45px;
     background: url("../images/header-bg.png") repeat-x;
@@ -87,12 +87,12 @@ input,textarea{
     height: 44px;
     position: absolute;
     padding: 12px 10px;
-    /*æŒ‰é’®å¤§å°éœ€è¦è®¾ç½®åå¤§  ç”¨æˆ·ä½“éªŒ*/
+    /*°´Å¥´óĞ¡ĞèÒªÉèÖÃÆ«´ó  ÓÃ»§ÌåÑé*/
     top: 0;
-    background-origin: content-box;/*å®šä½ä»¥å†…å®¹å¼€å§‹å®šä½*/
-    background-clip: content-box;/*æ˜¾ç¤ºèƒŒæ™¯ ä»å†…å®¹å¼€å§‹æ˜¾ç¤º*/
+    background-origin: content-box;/*¶¨Î»ÒÔÄÚÈİ¿ªÊ¼¶¨Î»*/
+    background-clip: content-box;/*ÏÔÊ¾±³¾° ´ÓÄÚÈİ¿ªÊ¼ÏÔÊ¾*/
 }
-/*æŒ‰é’®å¤§å°ä¸å˜  ä½†æ˜¯æ˜¾ç¤ºçš„èƒŒæ™¯åŒºåŸŸ è¦å˜å°*/
+/*°´Å¥´óĞ¡²»±ä  µ«ÊÇÏÔÊ¾µÄ±³¾°ÇøÓò Òª±äĞ¡*/
 .jd_topBar .icon_back{
     left: 0;
     background-position: -20px 0;
